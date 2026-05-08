@@ -43,13 +43,17 @@ console.log(user.path());
 
 let currentPath = life;
 
+function scrollToBot() {
+  document.getElementsByClassName("console")[0].scrollBy(0, 1000);
+}
+
 function echo(txt) {
   echo(txt, true);
 }
 
 function echo(txt, flush) {
   document.getElementById("console").innerHTML += '\n' + txt;
-  document.getElementsByClassName("console")[0].scrollBy(0, 1000);
+  scrollToBot();
 }
 
 function execCmd(text) {
@@ -97,6 +101,7 @@ echo    -- echo a message to the console
 
 document.addEventListener("keydown", () => {
   let k = event.key;
+  scrollToBot();
   let user_text = document.getElementById("user-input").innerHTML;
   if (k.length == 1) {
     document.getElementById("user-input").innerHTML += k;
