@@ -47,6 +47,7 @@ code {
     box-shadow: var(--bg2) 2px 2px 40px 5px;
     max-height: 60vh;
     overflow-y: scroll;
+    min-width: 712px;
 }
 #cursor {
     border-left: var(--main_col) 1px solid;

@@ -56,6 +56,13 @@ function execCmd(text) {
   switch (text) {
     case "clear":
       document.getElementById("console").innerHTML = "";
+      let inp = document.createElement("span");
+      inp.id = "user-input";
+      document.getElementById("console").appendChild(inp);
+      let cur = document.createElement("span");
+      cur.id = "cursor";
+      cur.style.animation = "blink 1s infinite";
+      document.getElementById("console").appendChild(cur);
       break;
     case "echo":
       echo("");
