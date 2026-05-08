@@ -305,10 +305,15 @@ footer {
 
   margin-left: 20px;
   margin-right: 20px;
+
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
 .navli {
   padding: 5px;
+  align-items: center;
+  display: flex;
 }
 
 .navlink {
