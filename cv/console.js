@@ -58,6 +58,14 @@ function execCmd(text) {
     case "pwd":
       echo(currentPath.path());
       break;
+    case "help":
+      echo(`
+help    -- print this message
+ls      -- list files in directory
+pwd     -- print current directory
+git log -- display the log of the current directory
+        `);
+      break;
     case "git log":
       echo(document.getElementById("gitlog").innerHTML);
       break;
