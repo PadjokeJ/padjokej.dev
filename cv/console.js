@@ -1,3 +1,5 @@
+const gitloglife = document.getElementById("gitlog").innerHTML;
+
 class FileNode {
   constructor(isDir, p, name) {
     this.isDir = isDir;
@@ -47,10 +49,17 @@ function echo(txt) {
 
 function echo(txt, flush) {
   document.getElementById("console").innerHTML += '\n' + txt;
+  document.getElementsByClassName("console")[0].scrollBy(0, 1000);
 }
 
 function execCmd(text) {
   switch (text) {
+    case "clear":
+      document.getElementById("console").innerHTML = "";
+      break;
+    case "echo":
+      echo("");
+      break;
     case "ls":
       currentPath.children.forEach(c => echo(c.name, false));
       echo("");
@@ -61,13 +70,15 @@ function execCmd(text) {
     case "help":
       echo(`
 help    -- print this message
+clear   -- clear the console's contents
 ls      -- list files in directory
 pwd     -- print current directory
 git log -- display the log of the current directory
+echo    -- echo a message to the console
         `);
       break;
     case "git log":
-      echo(document.getElementById("gitlog").innerHTML);
+      echo(gitloglife);
       break;
     default:
       if (text.startsWith("echo "))
@@ -94,7 +105,7 @@ document.addEventListener("keydown", () => {
     document.getElementById("console").scrollBy(0, 999);
     let clone = el.cloneNode(true);
     let cu_clone = cu.cloneNode(true);
-    document.getElementById("user-input").id = "old-input";
+    document.getElementById("user-input").id = "";
     document.getElementById("cursor").remove();
     document.getElementById("console").appendChild(clone);
     document.getElementById("console").appendChild(cu_clone);
