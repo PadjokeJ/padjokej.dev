@@ -55,6 +55,14 @@
             "Image" : "pyrythmo.png",
             "URL" : "https://rythmo.padjokej.dev/",
             "Tech" : "Python"
+        },
+        {
+            "Id" : "ajul",
+            "Title" : "Ajul",
+            "Description" : "A java implementation of Azul, a board game. Featuring multiplayer with java sockets.",
+            "Image" : "ajul.png",
+            "URL" : "https://github.com/PadjokeJ/Ajul",
+            "Tech" : "Java"
         }
 
     ]
