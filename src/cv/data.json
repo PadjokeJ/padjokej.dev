@@ -19,7 +19,7 @@
       "position": "Logistics manager",
       "link": "https://chocopoly.ch",
       "start": "2025-10-08",
-      "end": "ongoing"
+      "end": "2026-07-31"
     },
     {
       "name": "EPFL",
@@ -33,7 +33,21 @@
       "position": "Team IT",
       "link": "https://clic.epfl.ch",
       "start": "2026-03-25",
+      "end": "2026-07-31"
+    },
+    {
+      "name": "Chocopoly",
+      "position": "Treasurer",
+      "link": "https://chocopoly.ch",
+      "start": "2026-08-01",
       "end": "ongoing"
-    }
+    },
+    {
+      "name": "CLIC",
+      "position": "IT Manager",
+      "link": "https://clic.epfl.ch",
+      "start": "2026-08-01",
+      "end": "ongoing"
+    },
   ]
 }
