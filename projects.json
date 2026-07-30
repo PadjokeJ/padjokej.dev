@@ -63,6 +63,14 @@
             "Image" : "ajul.png",
             "URL" : "https://github.com/PadjokeJ/Ajul",
             "Tech" : "Java"
+        },
+        {
+            "Id" : "liftoff",
+            "Title" : "LIFTOFF",
+            "Description" : "A short metroidbrainia made in 96 hours for the GMTK game jam 2026.",
+            "Image" : "liftoff.png",
+            "URL" : "https://padjokej.itch.io/LIFTOFF",
+            "Tech" : "C#"
         }
 
     ]
