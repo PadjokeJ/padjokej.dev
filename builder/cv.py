@@ -14,12 +14,14 @@ if __name__ == "__main__":
   positions  = []
   pos_ends   = []
   pos_starts = []
+  branches = []
   for job in data["jobs"]:
     name = job["name"]
     pos  = job["position"]
     link = job["link"]
     strt = job["start"]
     end  = job["end"]
+    branches.append(job["branch"])
     
     if end != "ongoing":
       d_end = datetime.strptime(end, "%Y-%m-%d")
@@ -42,16 +44,23 @@ if __name__ == "__main__":
   
   current_branches = 1
   for i in range(1, len(sorted_pos)):
-    if pos_ends[i - 1] == "ongoing" or pos_ends[i - 1] > pos_starts[i]:
-      formatted.append((nothin + ' ') * (current_branches - 1) + branch)
-      formatted.append(f"{(nothin + ' ') * current_branches}{commit} {sorted_pos[i]}")
+    if branches[i] >= current_branches:
+      formatted.append((nothin + ' ') * (current_branches) + branch)
       current_branches += 1
-    else: 
-      current_branches -= 1
-      formatted.append(f"{commit} {sorted_pos[i]}")
-    if pos_ends[i - 1] != "ongoing" and pos_ends[i - 1] > pos_starts[i]:
-      current_branches -= 1
-      formatted.append((nothin + ' ') * (current_branches - 1) + merge)
+      formatted.append(f"{(nothin + ' ') * current_branches}{commit} {sorted_pos[i}")
+    else:
+      formatted.append(f"{(nothin + ' ') * branches[i]}{commit} {(nothin + ' ') * (current_branches - branches[i] - 1)}{sorted_pos[i]")
+      
+    #if pos_ends[i - 1] == "ongoing" or pos_ends[i - 1] > pos_starts[i]:
+    #  formatted.append((nothin + ' ') * (current_branches - 1) + branch)
+    #  formatted.append(f"{(nothin + ' ') * current_branches}{commit} {sorted_pos[i]}")
+    #  current_branches += 1
+    #else: 
+    #  current_branches -= 1
+    #  formatted.append(f"{commit} {sorted_pos[i]}")
+    #if pos_ends[i - 1] != "ongoing" and pos_ends[i - 1] > pos_starts[i]:
+    #  current_branches -= 1
+    #  formatted.append((nothin + ' ') * (current_branches - 1) + merge)
 
   
   formatted.reverse()

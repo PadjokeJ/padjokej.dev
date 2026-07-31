@@ -5,49 +5,56 @@
       "position": "Studies in Physics",
       "link": "https://gymnase-morges.ch",
       "start": "2022-09-20",
-      "end": "2025-07-20"
+      "end": "2025-07-20",
+      "branch": 0
     },
     {
       "name": "Lifeschool Lausanne",
       "position": "IT manager and website developer",
       "link": "https://lifeschool-lausanne.ch",
       "start": "2025-05-01",
-      "end": "ongoing"
+      "end": "ongoing",
+      "branch": 1
     },
     {
       "name": "Chocopoly",
       "position": "Logistics manager",
       "link": "https://chocopoly.ch",
       "start": "2025-10-08",
-      "end": "2026-07-31"
+      "end": "2026-07-31",
+      "branch": 2
     },
     {
       "name": "EPFL",
       "position": "Bachelor in Informatics",
       "link": "https://epfl.ch",
       "start": "2025-09-08",
-      "end": "ongoing"
+      "end": "ongoing",
+      "branch": 0
     },
     {
       "name": "CLIC",
       "position": "Team IT",
       "link": "https://clic.epfl.ch",
       "start": "2026-03-25",
-      "end": "2026-07-31"
+      "end": "2026-07-31",
+      "branch": 3
     },
     {
       "name": "Chocopoly",
       "position": "Treasurer",
       "link": "https://chocopoly.ch",
       "start": "2026-08-01",
-      "end": "ongoing"
+      "end": "ongoing",
+      "branch": 2
     },
     {
       "name": "CLIC",
       "position": "IT Manager",
       "link": "https://clic.epfl.ch",
       "start": "2026-08-01",
-      "end": "ongoing"
+      "end": "ongoing",
+      "branch": 3
     }
   ]
 }
