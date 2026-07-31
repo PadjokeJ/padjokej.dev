@@ -49,7 +49,7 @@ if __name__ == "__main__":
       current_branches += 1
       formatted.append(f"{(nothin + ' ') * current_branches}{commit} {sorted_pos[i]}")
     else:
-      formatted.append(f"{(nothin + ' ') * branches[i]}{commit} {(nothin + ' ') * (current_branches - branches[i] - 1)}{sorted_pos[i]")
+      formatted.append(f"{(nothin + ' ') * branches[i]}{commit} {(nothin + ' ') * (current_branches - branches[i] - 1)}{sorted_pos[i]}")
       
     #if pos_ends[i - 1] == "ongoing" or pos_ends[i - 1] > pos_starts[i]:
     #  formatted.append((nothin + ' ') * (current_branches - 1) + branch)
