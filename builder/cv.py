@@ -47,7 +47,7 @@ if __name__ == "__main__":
     if branches[i] >= current_branches:
       formatted.append((nothin + ' ') * (current_branches) + branch)
       current_branches += 1
-      formatted.append(f"{(nothin + ' ') * current_branches}{commit} {sorted_pos[i}")
+      formatted.append(f"{(nothin + ' ') * current_branches}{commit} {sorted_pos[i]}")
     else:
       formatted.append(f"{(nothin + ' ') * branches[i]}{commit} {(nothin + ' ') * (current_branches - branches[i] - 1)}{sorted_pos[i]")
       
