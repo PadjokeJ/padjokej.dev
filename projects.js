@@ -33,8 +33,8 @@ function proj_button(project) {
   lnk.append(tec);
 
   img = document.createElement("img");
-  img.src = "images/" + project.Image;
-  img.style.width = "312px";
+  img.src = "/images/" + project.Image;
+  img.style.width = "352px";
   img.style.height = "256px";
   img.style.transition = "transform ease 0.2s";
   img.id = "image-" + project.Id;
@@ -81,6 +81,6 @@ function spawn_buttons(json) {
   }
 }
 
-fetch("./projects.json")
+fetch("/projects.json")
   .then((response) => response.json())
   .then((json) => spawn_buttons(json));

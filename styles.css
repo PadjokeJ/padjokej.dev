@@ -32,7 +32,6 @@ h3 {
 pre {
     padding: 20px;
     border: 4px solid var(--blue);
-    border-radius: 20px;
 }
 code {
     display: block;
@@ -119,7 +118,6 @@ code {
     vertical-align: center;
 
     border: solid var(--blue) 2px;
-    border-radius: 10px;
     padding: 5px;
     padding-top: 10px;
     margin: 0;
@@ -152,17 +150,12 @@ code {
 #description
 {
     border: 4px solid var(--blue);
-    border-radius: 20px 20px 20px 0px;
     padding: 20px;
     max-width: 400px;
     margin-left: 10px;
     text-align: left;
 
     box-shadow: var(--bg2) 2px 2px 40px, inset var(--bg2) -4px -4px 5px;
-}
-#profile 
-{
-    border-radius: 20%;
 }
 
 #buttons-container {
@@ -179,7 +172,6 @@ code {
     max-height: 296px;
     padding: 20px;
     border: 2px solid var(--blue);
-    border-radius: 25px;
 
 
     text-decoration: none;
@@ -213,13 +205,11 @@ code {
 }
 
 .project-image {
-    border-radius: 20px;
     object-fit: cover;
 }
 
 .tech {
   background: var(--blue);
-  border-radius: 1em;
   padding: 3px;
   min-width: 1.5em;
   display: inline-flex;
@@ -279,7 +269,6 @@ footer {
 
   border: solid;
   border-color: rgb(93, 140, 168);
-  border-radius: 0 0 15px 15px;
   border-width: 0 0 3px;
 
   width: calc(100% - 14px);
@@ -351,4 +340,10 @@ footer {
   .navmenu {
     display: block;
   }
+}
+
+.link_center {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
 }
