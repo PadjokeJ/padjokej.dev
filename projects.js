@@ -21,24 +21,29 @@ function proj_button(project) {
   lnk.target = "_blank";
   lnk.href = project.URL;
   lnk.classList.add("project");
+  lnk.classList.add("shadow");
+  lnk.classList.add("border");
   lnk.id = project.Id;
 
   div_spawn.append(lnk);
 
   tec = document.createElement("div");
   tec.classList.add("tech");
+  tec.classList.add("shadow");
+  tec.classList.add("border");
   tec.innerHTML = project.Tech;
   tec.style.backgroundColor = get_color(project.Tech);
 
   lnk.append(tec);
 
   img = document.createElement("img");
-  img.src = "images/" + project.Image;
-  img.style.width = "312px";
+  img.src = "/images/" + project.Image;
+  img.style.width = "352px";
   img.style.height = "256px";
   img.style.transition = "transform ease 0.2s";
   img.id = "image-" + project.Id;
   img.classList.add("project-image");
+  lnk.classList.add("border");
 
   lnk.append(img);
 
@@ -81,6 +86,6 @@ function spawn_buttons(json) {
   }
 }
 
-fetch("./projects.json")
+fetch("/projects.json")
   .then((response) => response.json())
   .then((json) => spawn_buttons(json));

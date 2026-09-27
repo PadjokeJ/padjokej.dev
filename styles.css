@@ -1,8 +1,9 @@
 :root {
     --main_col : aliceblue;
-    --back_col : rgb(5, 5, 10);
+    --back_col : #222436;
     --blue     : rgb(93, 140, 168);
     --bg2      : #000000;
+    --shadow   : #000000;
 
     scroll-behavior: smooth;
 }
@@ -32,7 +33,6 @@ h3 {
 pre {
     padding: 20px;
     border: 4px solid var(--blue);
-    border-radius: 20px;
 }
 code {
     display: block;
@@ -44,7 +44,6 @@ code {
 
 .console { 
     background-color: var(--back_col);
-    box-shadow: var(--bg2) 2px 2px 40px 5px;
     max-height: 60vh;
     overflow-y: scroll;
     min-width: 712px;
@@ -56,7 +55,6 @@ code {
 @media (prefers-color-scheme: dark) {
     body {
         --main_col: #FFFFFF;
-        --back_col: #15151A;
         --bg2: #000000;
     }
     #main-footer {
@@ -78,6 +76,7 @@ code {
         --main_col: #05050A;
         --back_col: #FFFFFF;
         --bg2: #00000055;
+        --shadow   : #000000;
     }
     #profile {
         border: solid 5px rgb(15, 70, 80);
@@ -118,8 +117,6 @@ code {
 
     vertical-align: center;
 
-    border: solid var(--blue) 2px;
-    border-radius: 10px;
     padding: 5px;
     padding-top: 10px;
     margin: 0;
@@ -129,12 +126,10 @@ code {
 
     transition: transform ease 0.2s, box-shadow ease 0.2s;
 
-    box-shadow: inset var(--bg2) -2px -2px 5px, var(--bg2) 2px 2px 20px;
 }
 .social-link:hover {
     transform: translateY(-7px);
-
-    box-shadow: inset var(--bg2) -2px -2px 5px, var(--bg2) 2px 9px 40px;
+    box-shadow: var(--shadow) 10px 17px;
 }
 
 .text-img-container {
@@ -146,23 +141,13 @@ code {
     max-width: 200px;
     height: auto;
     margin: 0;
-
-    box-shadow: var(--bg2) 2px 2px 40px;
 }
-#description
-{
-    border: 4px solid var(--blue);
-    border-radius: 20px 20px 20px 0px;
-    padding: 20px;
+
+#description {
     max-width: 400px;
-    margin-left: 10px;
     text-align: left;
-
-    box-shadow: var(--bg2) 2px 2px 40px, inset var(--bg2) -4px -4px 5px;
-}
-#profile 
-{
-    border-radius: 20%;
+    margin: 0;
+    padding: 20px;
 }
 
 #buttons-container {
@@ -178,15 +163,11 @@ code {
     width: 352px;
     max-height: 296px;
     padding: 20px;
-    border: 2px solid var(--blue);
-    border-radius: 25px;
-
 
     text-decoration: none;
     color: var(--blue);
 
     overflow: hidden;
-    box-shadow: inset var(--bg2) 2px 2px 5px 2px;
 }
 
 .sliding {
@@ -201,6 +182,12 @@ code {
     transition: transform ease 0.2s;
 
     box-shadow: inset var(--bg2) 2px -5px 5px, var(--bg2) 2px 2px 20px;
+
+    border-top: 2px var(--blue) solid;
+}
+
+.border {
+  border: solid var(--blue) 2px;
 }
 
 .project-title {
@@ -213,13 +200,12 @@ code {
 }
 
 .project-image {
-    border-radius: 20px;
     object-fit: cover;
 }
 
 .tech {
+  margin-left: 20px;
   background: var(--blue);
-  border-radius: 1em;
   padding: 3px;
   min-width: 1.5em;
   display: inline-flex;
@@ -227,7 +213,7 @@ code {
   z-index: 100;
   color: var(--main_col);
   transform: translateX(-20px);
-  box-shadow: var(--bg2) 2px 12px 20px;
+  box-shadow: var(--shadow) 5px 5px;
 }
 
 #main-footer {
@@ -279,7 +265,6 @@ footer {
 
   border: solid;
   border-color: rgb(93, 140, 168);
-  border-radius: 0 0 15px 15px;
   border-width: 0 0 3px;
 
   width: calc(100% - 14px);
@@ -352,3 +337,14 @@ footer {
     display: block;
   }
 }
+
+.link_center {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.shadow {
+  box-shadow: var(--shadow) 10px 10px;
+}
+
