@@ -21,12 +21,14 @@ function proj_button(project) {
   lnk.target = "_blank";
   lnk.href = project.URL;
   lnk.classList.add("project");
+  lnk.classList.add("shadow");
   lnk.id = project.Id;
 
   div_spawn.append(lnk);
 
   tec = document.createElement("div");
   tec.classList.add("tech");
+  tec.classList.add("shadow");
   tec.innerHTML = project.Tech;
   tec.style.backgroundColor = get_color(project.Tech);
 

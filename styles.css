@@ -1,8 +1,9 @@
 :root {
     --main_col : aliceblue;
-    --back_col : rgb(5, 5, 10);
+    --back_col : #222436;
     --blue     : rgb(93, 140, 168);
     --bg2      : #000000;
+    --shadow   : #000000;
 
     scroll-behavior: smooth;
 }
@@ -43,7 +44,6 @@ code {
 
 .console { 
     background-color: var(--back_col);
-    box-shadow: var(--bg2) 2px 2px 40px 5px;
     max-height: 60vh;
     overflow-y: scroll;
     min-width: 712px;
@@ -55,7 +55,6 @@ code {
 @media (prefers-color-scheme: dark) {
     body {
         --main_col: #FFFFFF;
-        --back_col: #15151A;
         --bg2: #000000;
     }
     #main-footer {
@@ -77,6 +76,7 @@ code {
         --main_col: #05050A;
         --back_col: #FFFFFF;
         --bg2: #00000055;
+        --shadow   : #000000;
     }
     #profile {
         border: solid 5px rgb(15, 70, 80);
@@ -127,12 +127,10 @@ code {
 
     transition: transform ease 0.2s, box-shadow ease 0.2s;
 
-    box-shadow: inset var(--bg2) -2px -2px 5px, var(--bg2) 2px 2px 20px;
 }
 .social-link:hover {
     transform: translateY(-7px);
-
-    box-shadow: inset var(--bg2) -2px -2px 5px, var(--bg2) 2px 9px 40px;
+    box-shadow: var(--shadow) 10px 17px;
 }
 
 .text-img-container {
@@ -144,18 +142,12 @@ code {
     max-width: 200px;
     height: auto;
     margin: 0;
-
-    box-shadow: var(--bg2) 2px 2px 40px;
 }
-#description
-{
-    border: 4px solid var(--blue);
-    padding: 20px;
-    max-width: 400px;
-    margin-left: 10px;
-    text-align: left;
 
-    box-shadow: var(--bg2) 2px 2px 40px, inset var(--bg2) -4px -4px 5px;
+#description {
+    max-width: 400px;
+    text-align: left;
+    margin: 0;
 }
 
 #buttons-container {
@@ -178,7 +170,6 @@ code {
     color: var(--blue);
 
     overflow: hidden;
-    box-shadow: inset var(--bg2) 2px 2px 5px 2px;
 }
 
 .sliding {
@@ -209,6 +200,7 @@ code {
 }
 
 .tech {
+  margin-left: 20px;
   background: var(--blue);
   padding: 3px;
   min-width: 1.5em;
@@ -217,7 +209,7 @@ code {
   z-index: 100;
   color: var(--main_col);
   transform: translateX(-20px);
-  box-shadow: var(--bg2) 2px 12px 20px;
+  box-shadow: var(--shadow) 5px 5px;
 }
 
 #main-footer {
@@ -347,3 +339,8 @@ footer {
   gap: 0.4rem;
   align-items: center;
 }
+
+.shadow {
+  box-shadow: var(--shadow) 10px 10px;
+}
+
