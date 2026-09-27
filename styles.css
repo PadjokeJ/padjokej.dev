@@ -256,7 +256,7 @@ footer {
 
 .navbar {
   margin: 0;
-  padding: 5px;
+  padding: 10px;
 
   position: fixed;
 
@@ -264,7 +264,7 @@ footer {
   box-shadow: var(--bg2) 0 0 30px;
 
   border: solid;
-  border-color: rgb(93, 140, 168);
+  border-color: var(--blue);
   border-width: 0 0 3px;
 
   width: calc(100% - 14px);
@@ -299,6 +299,8 @@ footer {
   padding: 5px;
   align-items: center;
   display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .navlink {
