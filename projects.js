@@ -22,6 +22,7 @@ function proj_button(project) {
   lnk.href = project.URL;
   lnk.classList.add("project");
   lnk.classList.add("shadow");
+  lnk.classList.add("border");
   lnk.id = project.Id;
 
   div_spawn.append(lnk);
@@ -29,6 +30,7 @@ function proj_button(project) {
   tec = document.createElement("div");
   tec.classList.add("tech");
   tec.classList.add("shadow");
+  tec.classList.add("border");
   tec.innerHTML = project.Tech;
   tec.style.backgroundColor = get_color(project.Tech);
 
@@ -41,6 +43,7 @@ function proj_button(project) {
   img.style.transition = "transform ease 0.2s";
   img.id = "image-" + project.Id;
   img.classList.add("project-image");
+  lnk.classList.add("border");
 
   lnk.append(img);
 

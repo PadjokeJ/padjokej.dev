@@ -117,7 +117,6 @@ code {
 
     vertical-align: center;
 
-    border: solid var(--blue) 2px;
     padding: 5px;
     padding-top: 10px;
     margin: 0;
@@ -148,6 +147,7 @@ code {
     max-width: 400px;
     text-align: left;
     margin: 0;
+    padding: 20px;
 }
 
 #buttons-container {
@@ -163,8 +163,6 @@ code {
     width: 352px;
     max-height: 296px;
     padding: 20px;
-    border: 2px solid var(--blue);
-
 
     text-decoration: none;
     color: var(--blue);
@@ -184,6 +182,12 @@ code {
     transition: transform ease 0.2s;
 
     box-shadow: inset var(--bg2) 2px -5px 5px, var(--bg2) 2px 2px 20px;
+
+    border-top: 2px var(--blue) solid;
+}
+
+.border {
+  border: solid var(--blue) 2px;
 }
 
 .project-title {
