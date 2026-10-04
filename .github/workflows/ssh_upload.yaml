@@ -51,6 +51,6 @@ jobs:
       - name: Deploy website
         run: |
           ssh -i ~/.ssh/id_rsa "${{ secrets.USER }}@${{ secrets.HOST }}" rm -rf website/*
-          ssh -i ~/.ssh/id_rsa "${{ secrets.USER }}@${{ secrets.HOST }}" cp -r temp/* website
+          ssh -i ~/.ssh/id_rsa "${{ secrets.USER }}@${{ secrets.HOST }}" cp -r temp/* temp/.well-known website
 
       
