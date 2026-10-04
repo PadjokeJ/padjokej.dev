@@ -150,7 +150,7 @@ code {
     justify-content: center;
     flex-wrap: wrap;
     columns: 2;
-    margin-bottom: 30vh;
+    margin-bottom: 30px;
 }
 
 .project {
