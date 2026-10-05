@@ -1,6 +1,6 @@
 Contact: mailto:security@jpfister.ch
 Expires: 2027-10-01T18:55:00.000Z
-Encryption: https://jpfister.ch/.well-known/gpg_key.txt
+Encryption: https://jpfister.ch/.well-known/pgp_key.txt
 Preferred-Languages: en, fr
 Canonical: https://jpfister.ch/.well-known/security.txt
 
