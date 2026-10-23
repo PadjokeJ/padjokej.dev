@@ -55,6 +55,14 @@
       "start": "2026-08-01",
       "end": "ongoing",
       "branch": 3
+    },
+    {
+      "name": "SPS|Ateliers PLUS",
+      "position": "Student Assistant",
+      "link": "https://www.epfl.ch/education/education-and-science-outreach/fr/programme-plus-vd/",
+      "start": "2026-09-01",
+      "end": "ongoing",
+      "branch": 4
     }
   ]
 }
