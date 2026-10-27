@@ -1,77 +1,84 @@
 {
-    "Projects" : [
-        {
-            "Id" : "silva",
-            "Title" : "Silva Sanctus",
-            "Description" : "Silva Sanctus is a project made with Unity, as a swiss maturity project. It is a roguelite game made in 8 months.",
-            "Image" : "SilvaSanctusThumbnail.png",
-            "URL" : "https://github.com/PadjokeJ/SilvaSanctus",
-            "Tech" : "C#"
-        },
-        {
-            "Id" : "miniflog",
-            "Title" : "MiniFlog",
-            "Description" : "MiniFlog is a puzzle game made with Unity for the GMTK game jam. It was made in under 48 hours.",
-            "Image" : "miniflog.png",
-            "URL" : "https://padjokej.itch.io/miniflog",
-            "Tech" : "C#"
-        },
-        {
-            "Id" : "gamblersfallacy",
-            "Title" : "Gambler's Fallacy",
-            "Description" : "Gambler's Fallacy is a minecraft mod that adds slot machines and a weapon based on random chance.",
-            "Image" : "gamblers.png",
-            "URL" : "https://modrinth.com/mod/gamblers-fallacy",
-            "Tech" : "Java"
-        },
-        {
-            "Id" : "tealeaf",
-            "Title" : "Tealeaf",
-            "Description" : "Tealeaf is a minecraft mod that adds tea, and cute kettles.",
-            "Image" : "tealeaf.webp",
-            "URL" : "https://modrinth.com/mod/tealeaf",
-            "Tech" : "Java"
-        },
-        {
-            "Id" : "jeopardy",
-            "Title" : "Jeopardy",
-            "Description" : "A quick template to make interactive jeopardy-like games.",
-            "Image" : "jeopardy.png",
-            "URL" : "https://github.com/PadjokeJ/Jeopardy",
-            "Tech" : "JS"
-        },
-        {
-            "Id" : "mp2",
-            "Title" : "EPFL MP2",
-            "Description" : "A semester project made in the CS107 class. Game that behaves as a video player.",
-            "Image" : "mp2.png",
-            "URL" : "https://github.com/PadjokeJ/MP02-JeuSurGrille",
-            "Tech" : "Java"
-        },
-        {
-            "Id" : "pyrythmo",
-            "Title" : "Rythmo Creator",
-            "Description" : "A self hosted server which allows for easy creation of dubbing text tracks, uses ffmpeg.",
-            "Image" : "pyrythmo.png",
-            "URL" : "https://rythmo.padjokej.dev/",
-            "Tech" : "Python"
-        },
-        {
-            "Id" : "ajul",
-            "Title" : "Ajul",
-            "Description" : "A java implementation of Azul, a board game. Featuring multiplayer with java sockets.",
-            "Image" : "ajul.png",
-            "URL" : "https://github.com/PadjokeJ/Ajul",
-            "Tech" : "Java"
-        },
-        {
-            "Id" : "liftoff",
-            "Title" : "LIFTOFF",
-            "Description" : "A short metroidbrainia made in 96 hours for the GMTK game jam 2026.",
-            "Image" : "liftoff.png",
-            "URL" : "https://padjokej.itch.io/LIFTOFF",
-            "Tech" : "C#"
-        }
-
-    ]
+  "Projects": [
+    {
+      "Id": "pye",
+      "Title": "PYE",
+      "Description": "A fullstack platform for academic management",
+      "Image": "",
+      "URL": "https://github.com/PadjokeJ/PYE",
+      "Tech": "Python"
+    },
+    {
+      "Id": "liftoff",
+      "Title": "LIFTOFF",
+      "Description": "A short metroidbrainia made in 96 hours for the GMTK game jam 2026.",
+      "Image": "liftoff.png",
+      "URL": "https://padjokej.itch.io/LIFTOFF",
+      "Tech": "C#"
+    },
+    {
+      "Id": "ajul",
+      "Title": "Ajul",
+      "Description": "A java implementation of Azul, a board game. Featuring multiplayer with java sockets.",
+      "Image": "ajul.png",
+      "URL": "https://github.com/PadjokeJ/Ajul",
+      "Tech": "Java"
+    },
+    {
+      "Id": "pyrythmo",
+      "Title": "Rythmo Creator",
+      "Description": "A self hosted server which allows for easy creation of dubbing text tracks, uses ffmpeg.",
+      "Image": "pyrythmo.png",
+      "URL": "https://rythmo.padjokej.dev/",
+      "Tech": "Python"
+    },
+    {
+      "Id": "mp2",
+      "Title": "EPFL MP2",
+      "Description": "A semester project made in the CS107 class. Game that behaves as a video player.",
+      "Image": "mp2.png",
+      "URL": "https://github.com/PadjokeJ/MP02-JeuSurGrille",
+      "Tech": "Java"
+    },
+    {
+      "Id": "jeopardy",
+      "Title": "Jeopardy",
+      "Description": "A quick template to make interactive jeopardy-like games.",
+      "Image": "jeopardy.png",
+      "URL": "https://github.com/PadjokeJ/Jeopardy",
+      "Tech": "JS"
+    },
+    {
+      "Id": "tealeaf",
+      "Title": "Tealeaf",
+      "Description": "Tealeaf is a minecraft mod that adds tea, and cute kettles.",
+      "Image": "tealeaf.webp",
+      "URL": "https://modrinth.com/mod/tealeaf",
+      "Tech": "Java"
+    },
+    {
+      "Id": "gamblersfallacy",
+      "Title": "Gambler's Fallacy",
+      "Description": "Gambler's Fallacy is a minecraft mod that adds slot machines and a weapon based on random chance.",
+      "Image": "gamblers.png",
+      "URL": "https://modrinth.com/mod/gamblers-fallacy",
+      "Tech": "Java"
+    },
+    {
+      "Id": "miniflog",
+      "Title": "MiniFlog",
+      "Description": "MiniFlog is a puzzle game made with Unity for the GMTK game jam. It was made in under 48 hours.",
+      "Image": "miniflog.png",
+      "URL": "https://padjokej.itch.io/miniflog",
+      "Tech": "C#"
+    },
+    {
+      "Id": "silva",
+      "Title": "Silva Sanctus",
+      "Description": "Silva Sanctus is a project made with Unity, as a swiss maturity project. It is a roguelite game made in 8 months.",
+      "Image": "SilvaSanctusThumbnail.png",
+      "URL": "https://github.com/PadjokeJ/SilvaSanctus",
+      "Tech": "C#"
+    }
+  ]
 }
