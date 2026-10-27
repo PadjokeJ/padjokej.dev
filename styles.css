@@ -163,7 +163,7 @@ code {
     text-decoration: none;
     color: var(--blue);
 
-    overflow: hidden;
+    overflow: clip;
 }
 
 .sliding {
