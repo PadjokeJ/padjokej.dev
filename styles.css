@@ -74,7 +74,7 @@ code {
 @media (prefers-color-scheme: light) {
     body {
         --main_col: #05050A;
-        --back_col: #FFFFFF;
+        --back_col: #ede;
         --bg2: #00000055;
         --shadow   : #000000;
     }
