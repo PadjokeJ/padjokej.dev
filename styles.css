@@ -122,8 +122,8 @@ code {
 
     transition: transform ease 0.2s, box-shadow ease 0.2s;
 }
-.social-link:hover, .navlink:hover {
-    border: 2px #f00;
+.social-link:hover, .navli:hover, .navhome:hover {
+    border-color: salmon;
 }
 
 .text-img-container {
