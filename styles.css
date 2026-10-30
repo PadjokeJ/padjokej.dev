@@ -122,15 +122,14 @@ code {
 
     transition: transform ease 0.2s, box-shadow ease 0.2s;
 }
-.social-link:hover {
-    transform: translateY(-7px);
-    box-shadow: var(--shadow) 10px 17px;
+.social-link:hover, .navlink:hover {
+    border: 2px #f00;
 }
 
 .text-img-container {
     display: flex;
     align-items: center;
-    margin-top: 20vh;
+    margin-top: 10vh;
 }
 .text-img-container img {
     max-width: 200px;
