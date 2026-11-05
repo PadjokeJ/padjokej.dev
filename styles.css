@@ -135,6 +135,9 @@ code {
     max-width: 200px;
     height: auto;
     margin: 0;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
 }
 
 #description {
