@@ -1,19 +1,19 @@
 const badges = {
   "neovim": {
     "link": "https://neovim.io",
-    "img" : "/images/badges/neovim.gif"
+    "img": "/images/badges/neovim.gif"
   },
   "caddy": {
     "link": "https://caddyserver.com",
     "img": "/images/badges/caddy.png"
   },
   "agpl": {
-    "link": "https://github.com/PadjokeJ/padjokej.dev/blob/main/LICENSE",
-    "img" : "/images/badges/agpl.gif"
+    "link": "https://codeberg.org/jpfister/padjokej.dev/src/branch/main/LICENSE",
+    "img": "/images/badges/agpl.gif"
   },
   "arch": {
     "link": "https://archlinux.org",
-    "img" : "/images/badges/arch.gif"
+    "img": "/images/badges/arch.gif"
   }
 }
 
