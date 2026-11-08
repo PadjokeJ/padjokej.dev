@@ -34,7 +34,7 @@ if __name__ == "__main__":
 
     rand = os.urandom(8).hex()
 
-    job_block = f"<span class=\"branch\"><span style=\"color: #10ff42;\">{rand[0:8]}</span> - <span style=\"color: #4210ff;\"></span>({d_sta.strftime('%d/%m/%Y')} - {d_end})</span> {pos} - <a href=\"{link}\" style=\"color: #aaaaaa;\">{name}</a>"
+    job_block = f"<span style=\"color: #10ff42;\">{rand[0:8]}</span> - </span><span style=\"color: #4210ff;\">({d_sta.strftime('%d/%m/%Y')} - {d_end})</span> {pos} - <a href=\"{link}\" style=\"color: #aaaaaa;\">{name}</a>"
 
     pos_starts.append(d_sta)
     pos_ends.append(d_end)
@@ -46,6 +46,7 @@ if __name__ == "__main__":
   
   current_branches = 1
   for i in range(1, len(positions)):
+    formatted.append("<span class=\"branch\">")
     if branches[i] >= current_branches:
       formatted.append((nothin + ' ') * (current_branches - 1) + branch)
       formatted.append(f"{(nothin + ' ') * current_branches}{commit} {positions[i]}")
