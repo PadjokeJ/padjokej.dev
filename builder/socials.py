@@ -18,7 +18,7 @@ with open("src/index.html", 'r') as f:
   for line in f.readlines():
     index += line
 
-index = index.format(socials= sc)
+index = index.format(socials= sc, navbar="{navbar}")
 
 with open("src/index.html", 'w') as f:
   f.write(index)
