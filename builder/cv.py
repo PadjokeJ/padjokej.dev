@@ -42,17 +42,16 @@ if __name__ == "__main__":
     positions.append(job_block)
   #sorted_pos = sorted(positions, key=lambda x: pos_starts[positions.index(x)])
   
-  formatted = [f"{commit} {positions[0]}"]
+  formatted = [f"<span class=\"branch\">{commit} {positions[0]}"]
   
   current_branches = 1
   for i in range(1, len(positions)):
-    formatted.append("<span class=\"branch\">")
     if branches[i] >= current_branches:
-      formatted.append((nothin + ' ') * (current_branches - 1) + branch)
-      formatted.append(f"{(nothin + ' ') * current_branches}{commit} {positions[i]}")
+      formatted.append(f"<span class=\"branch\">{(nothin + ' ') * (current_branches - 1) + branch}</span>")
+      formatted.append(f"<span class=\"branch\">{(nothin + ' ') * current_branches}{commit} {positions[i]}")
       current_branches += 1
     else:
-      formatted.append(f"{(nothin + ' ') * branches[i]}{commit} {(nothin + ' ') * (current_branches - branches[i] - 1)}{positions[i]}")
+      formatted.append(f"<span class=\"branch\">{(nothin + ' ') * branches[i]}{commit} {(nothin + ' ') * (current_branches - branches[i] - 1)}{positions[i]}")
   
   formatted.reverse()
 
