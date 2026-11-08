@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Codeberg",
+    "href": "https://codeberg.org/jpfister",
+    "icon": "https://codeberg.org/assets/img/favicon.svg"
+  },
+  {
+    "name": "Github",
+    "href": "https://github.com/PadjokeJ",
+    "icon": "https://github.githubassets.com/favicons/favicon-dark.svg"
+  },
+  {
+    "name": "Itch.io",
+    "href": "https://padjokej.itch.io",
+    "icon": "https://itch.io/favicon.ico"
+  },
+  {
+    "name": "Modrinth",
+    "href": "https://modrinth.com/user/padjokej",
+    "icon": "https://modrinth.com/favicon.ico"
+  },
+  {
+    "name": "EPFL",
+    "href": "https://people.epfl.ch/jonatan.pfister",
+    "icon": "https://www.epfl.ch/wp-content/themes/wp-theme-2018/assets/svg/epfl-logo.svg"
+  }
+]
