@@ -78,9 +78,6 @@ code {
         --bg2: #00000055;
         --shadow   : #000000;
     }
-    #profile {
-        border: solid 5px rgb(15, 70, 80);
-    }
     #main-footer {
         background-color: var(--back_col);
     }
@@ -327,7 +324,7 @@ footer {
     justify-content: center;
     margin: 0;
     padding: 0;
-    border: 0;
+    border-width: 0;
     height: 0;
     transition: height 0.2s ease;
     overflow: clip;
@@ -335,9 +332,17 @@ footer {
   .navli-show {
     height: 1.5em;
     padding: 5px;
+    margin: 15px;
+    border-width: 2px;
   }
   .navmenu {
     display: block;
+  }
+  .console {
+    min-width: unset;
+  }
+  .branch {
+    display: none;
   }
 }
 
