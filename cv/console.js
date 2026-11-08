@@ -37,7 +37,7 @@ const root = new Directory(null, "");
 console.log(root.path());
 
 const home = new Directory(root, "home");
-const user = new Directory(home, "jonatan");
+const user = new Directory(home, "jpfister");
 const life = new Directory(user, "Life");
 console.log(user.path());
 
@@ -113,7 +113,7 @@ document.addEventListener("keydown", () => {
     execCmd(user_text);
     let el = document.getElementById("user-input");
     let cu = document.getElementById("cursor");
-    document.getElementById("console").innerHTML += "\njonatan@padjokej.dev: " + currentPath.name + "$ ";
+    document.getElementById("console").innerHTML += "\njpfister@padjokej.dev: " + currentPath.name + "$ ";
     document.getElementById("console").scrollBy(0, 999);
     let clone = el.cloneNode(true);
     let cu_clone = cu.cloneNode(true);
