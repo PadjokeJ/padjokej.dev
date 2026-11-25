@@ -1,6 +1,14 @@
 {
   "Projects": [
     {
+      "Id": "lecture-notes",
+      "Title": "Lecture Notes",
+      "Description": "The lecture notes I take during university classes",
+      "Image": "notes.webp",
+      "URL": "https://notes.padjokej.dev",
+      "Tech": ""
+    },
+    {
       "Id": "pye",
       "Title": "PYE",
       "Description": "A fullstack platform for academic management",

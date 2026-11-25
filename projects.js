@@ -12,7 +12,7 @@ function get_color(key) {
 
   return colors[k];
 }
-  
+
 
 function proj_button(project) {
   const div_spawn = document.getElementById("buttons-container");
@@ -27,14 +27,16 @@ function proj_button(project) {
 
   div_spawn.append(lnk);
 
-  tec = document.createElement("div");
-  tec.classList.add("tech");
-  tec.classList.add("shadow");
-  tec.classList.add("border");
-  tec.innerHTML = project.Tech;
-  tec.style.backgroundColor = get_color(project.Tech);
+  if (project.Tech !== "") {
+    tec = document.createElement("div");
+    tec.classList.add("tech");
+    tec.classList.add("shadow");
+    tec.classList.add("border");
+    tec.innerHTML = project.Tech;
+    tec.style.backgroundColor = get_color(project.Tech);
 
-  lnk.append(tec);
+    lnk.append(tec);
+  }
 
   img = document.createElement("img");
   img.src = "/images/" + project.Image;
@@ -69,8 +71,8 @@ function proj_button(project) {
     sl.style.transform = "translateY(-50%)";
     im = document.getElementById("image-" + id);
     im.style.transform = "scale(1.05)";
-});
-lnk.addEventListener("mouseleave", (event) => {
+  });
+  lnk.addEventListener("mouseleave", (event) => {
     id = event.target.id;
     sl = document.getElementById("slider-" + id);
     sl.style.transform = "translateY(0)";
@@ -81,7 +83,7 @@ lnk.addEventListener("mouseleave", (event) => {
 
 function spawn_buttons(json) {
   projects = json.Projects;
-  for (i in projects){
+  for (i in projects) {
     proj_button(projects[i]);
   }
 }
