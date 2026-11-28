@@ -1,4 +1,4 @@
-jpfister.ch:80, padjokej.dev:80 {
+:80{
   root /srv
   file_server {
     hide .git
